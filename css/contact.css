@@ -1,0 +1,165 @@
+body{
+    background-color: black;
+}
+
+/* contact page starts here  */
+
+
+.contact-box{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/contact-bg.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-data
+{   height: 60%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(3, 3, 3, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    border-radius: 20px;
+
+
+}
+
+.left-data{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px 0px;
+    text-align: left;
+    
+
+    & h5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+}
+
+
+.left-data h2{
+    font-size: 42px;
+    margin-top: -10px;
+}
+
+.left-data h4{
+    color:grey
+}
+
+.left-data i{
+    color:orange;
+    height:40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.data{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap:5px;
+    font-size: 18px;
+}
+
+
+.Submit{
+    height: 40px;
+    width: auto;
+    background-color: orange;
+    border:0px;
+    padding: 2px 8px; 
+    font-weight: bold;
+    border-radius: 8px;
+    transition: .5s ease;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.Submit:hover{
+    cursor: pointer;
+    color:orange;
+    background-color: white;
+}
+
+img{
+    height: 250px;
+    width: 350px;
+}
+/* contact page ends here  */
+
+
+
+/* ------------responsiveness ----------------- */
+
+@media screen and (max-width:480px){
+
+
+
+    /* contact part  */
+    .contact{
+        height: 100dvh;
+        padding: 0px;
+    }
+
+    .contact-data{
+        height: 65%;
+        width: 90%;
+    }
+    .left-data{
+        width: 100%;
+    }
+
+    img{
+        display: none;
+    }
+   
+
+
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .contact-data{
+        width: 90%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:769px) and (max-width:1028px){
+    .contact-data{
+        width: 60%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+}

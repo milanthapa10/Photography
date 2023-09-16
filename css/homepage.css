@@ -1,0 +1,776 @@
+ /* main page starts here  */
+ .main-page {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../images/background6-min.jpg");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: change 40s step-end infinite;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: brightness(0.9);
+}
+
+@keyframes change {
+
+    20% {
+        background-image: url("../images/background3-min.jpg");
+    }
+
+    40% {
+        background-image: url("../images/background4-min.jpg");
+    }
+
+
+    60% {
+        background-image: url("../images/background7-min.jpg");
+    }
+
+    80% {
+        background-image: url("../images/background5-min.jpg");
+    }
+
+}
+
+
+ /* hero page starts here  */
+ #hero-page {
+    height: 89vh;
+    width: 100%;
+    position: relative;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+
+}
+
+.data {
+    position: absolute;
+    left: 3%;
+    bottom: 10%;
+
+    & h1{
+    font-size: 55px;
+    letter-spacing: 2px;
+    width: 40%;
+    filter: drop-shadow(2px 1px 2px black);
+    }
+
+    & p{
+    font-size: 18px;
+    width: 60%;
+    letter-spacing: 1px;
+    text-align: justify;
+    } 
+}
+
+
+
+ /* about page starts here  */
+ .about {
+    height: 90vh;
+    width: 100%;
+    background-image: url("../images/about.jpg");
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.short-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    height: auto;
+    width: 28%;
+    padding: 20px 20px;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10%;
+
+
+    & h2{
+    font-size: 24px;
+    
+    }
+
+    & p{
+    font-size: 14px;
+    text-align: justify;
+
+    }
+}
+
+.btn {
+    height: 40px;
+    width: auto;
+    padding: 2px 8px;
+    background-color: orange;
+    border: 0;
+    font-size: 14px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: orange;
+}
+/* about page ends here  */
+
+
+
+
+ /* services page starts here  */
+ #services {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 50px 20px;
+    gap:10px;
+
+    & h2{
+    font-size: 36px;
+    }
+
+    & h5{
+    font-size: 20px;
+    font-weight: 400;
+    }
+
+}
+
+
+.service-items {
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.row {
+    height: 520px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.service {
+    height: 500px;
+    width: 47%;
+    position: relative;
+    
+    & img{
+    height: 100%;
+    width: 100%;
+    }
+}
+
+.info{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    width: 90%;
+    height: 0;
+    transition: .5s ease;
+    text-align: center;
+    z-index: 1;
+}
+
+.service:hover .info{
+    height: 12%;
+}
+
+.service:hover img {
+    opacity: 0.5;
+    height: 520px;
+    width: 105%;
+    transition: 0.5s;
+}
+/* services page ends here  */
+
+
+
+
+ /* video page starts here  */
+
+ .video-page {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+    & video{
+     width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    }
+
+    & h2{
+    font-size: 18px;
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    }
+}
+/* video page ends here  */
+
+
+
+ /* Gear page starts here  */
+
+ .gear-cage {
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+
+}
+
+.left-cage {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 25px;
+    gap:10px;
+
+    & h3{
+    font-size: 14px;
+    color:grey;
+    }
+
+    & h4{
+    font-size: 28px;
+    }
+
+    & p{
+    font-size: 15px;
+    }
+}
+
+.gearbtn:hover i{
+    color:orange;
+}
+
+.right-cage {
+    height: 100%;
+    width: 60%;
+    background-image: url("../images/gear-cage.jpg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+/* Gear page starts here  */
+
+
+ /* bgimage starts here  */
+ .bgimage {
+    height: 90vh;
+    width: 100%;
+    background-image: url("../images/wallpaperflare.com_wallpaper1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    position: relative;
+    background-attachment: fixed;
+
+    & h2{
+    font-size: 18px;
+    position: absolute;
+    bottom:20px;
+    left:20px;    
+    }
+}
+/* bgimage ends here  */
+
+
+ /* contact page starts here  */
+
+ .contact {
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+
+    & h2{
+    font-size: 40px;
+    width: 45%;
+    text-align: center;
+    }
+
+    & h5{
+    font-size: 24px;
+    color: grey;
+    }
+}
+/* contact page ends here  */
+
+
+
+ /* intsa page starts here  */
+ .insta {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/insta.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 100%;
+}
+
+
+.insta-box {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    gap:5px;
+
+    & i{
+    color: rgb(247, 86, 113);
+    font-size: 45px;
+    transition: .5s ease;    
+    }
+
+    & h4{
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+.insta-box a:hover i {
+    cursor: pointer;
+    color: rgb(197, 3, 35);
+
+}
+/* insta page ends here  */
+
+
+
+
+/* ----------------------------------------------responsive code ----------------------------------------------- */
+
+@media screen and (max-width:480px) {
+
+    .data{
+        & h1{
+            font-size: 28px;
+            width: 90%;
+        }
+
+        & p{
+            display: none;
+        }
+    }
+
+    .about{
+        height: 60vh;
+        background-size: cover;
+    }
+
+    .short-about{
+        width: 80%;
+
+        & h2{
+            font-size: 18px;
+        }
+
+        & p{
+            font-size: 12px;
+        }
+    }
+
+    .btn{
+        height: auto;
+        padding: 8px 12px;
+        border-radius: 10px;
+    }
+
+    #services{
+        padding: 20px 10px;
+
+        & h2{
+            font-size: 24px;
+        }
+
+        & h5{
+            font-size: 14px;
+        }
+    }
+
+    .row{
+        flex-direction: column;
+        height: auto;
+        gap:50px;
+    }
+
+    .service{
+        height: 350px;
+        width: 100%;
+    }
+
+    .info{
+        height: 12%;
+        width: 100%;
+
+        & h2{
+        font-size: 12px;
+        }
+    }
+
+    .video-page{
+        height: 60vh;
+        & h2{
+            font-size: 14px;
+        }
+    }
+
+    .gear-cage{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 40px 5px;
+        height: 90vh;
+        background-size: contain;
+    }
+
+    .left-cage{
+        width: 100%;
+        height: 45%;
+        padding: 10px;
+        & h3{
+            font-size: 12px;
+        }
+
+        & h4{
+            font-size: 20px;
+        }
+
+        & p{
+            font-size: 12px;
+            text-align: justify;
+        }
+    }
+
+    .right-cage{
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+    }
+
+    .bgimage{
+        & h2{
+            font-size: 14px;
+        }
+    }
+
+    .contact{
+        padding: 0px 5px;
+
+        & h2{
+            font-size: 24px;
+            width: 100%;
+        }
+
+        & h5{
+            font-size: 18px;
+        }
+    }
+
+
+
+
+
+
+}
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:481px) and (max-width:768px)  {
+
+    .data{
+        & h1{
+            font-size: 40px;
+            width: 80%;
+        }
+
+        & p{
+            width: 90%;
+            font-size: 16px;
+            text-align: left;
+            margin-top: 15px;
+        }
+    }
+
+    .about{
+        height: 50vh;
+    }
+
+    .short-about{
+        width: 60%;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+
+        & h2{
+            font-size: 24px;
+        }
+
+        & p{
+            font-size: 14px;
+        }
+    }
+
+    .btn{
+        height: auto;
+        padding: 8px 12px;
+        border-radius: 10px;
+    }
+
+    #services{
+        padding: 20px 10px;
+        
+        & h2{
+            font-size: 30px;
+        }
+
+        & h5{
+            font-size: 18px;
+        }
+    }
+    .service-items{
+        gap:80px;
+    }
+
+    .row{
+        flex-direction: column;
+        height: auto;
+        gap:80px;
+    }
+
+    .service{
+        height: 450px;
+        width: 90%;
+    }
+
+    .info{
+        height: 12%;
+        width: 100%;
+
+        & h2{
+        font-size: 12px;
+        }
+    }
+
+    .video-page{
+        height: 50vh;
+        & h2{
+            font-size: 14px;
+        }
+    }
+
+    .gear-cage{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 40px 5px;
+        height: 70vh;
+        width: 100%;
+    }
+
+    .left-cage{
+        width: 90%;
+        height: 30vh;
+        padding: 10px;
+        gap:20px;
+        & h3{
+            font-size: 14px;
+        }
+
+        & h4{
+            font-size: 26px;
+        }
+
+        & p{
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+
+    .right-cage{
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .bgimage{
+        & h2{
+            font-size: 14px;
+        }
+    }
+
+    .contact{
+        height: 40vh;
+        padding: 0px 5px;
+
+        & h2{
+            font-size: 30px;
+            width: 85%;
+        }
+
+        & h5{
+            font-size: 22px;
+        }
+    }
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:769px) and (max-width:1028px)  {
+
+    .data{
+        & h1{
+            font-size: 40px;
+            width: 80%;
+        }
+
+        & p{
+            width: 90%;
+            font-size: 16px;
+            text-align: left;
+            margin-top: 15px;
+        }
+    }
+
+    .about{
+        height: 39vh;
+        background-size: cover;
+    }
+
+    .short-about{
+        width: 50%;
+
+        & h2{
+            font-size: 24px;
+        }
+
+        & p{
+            font-size: 14px;
+        }
+    }
+
+    .btn{
+        height: auto;
+        padding: 8px 12px;
+        border-radius: 10px;
+    }
+
+    #services{
+        padding: 20px 10px;
+        
+        & h2{
+            font-size: 30px;
+        }
+
+        & h5{
+            font-size: 18px;
+        }
+    }
+    .row{
+        gap:40px;
+    }
+    .service{
+        height: 450px;
+        width: 90%;
+    }
+
+    .info{
+        height: 12%;
+        width: 100%;
+
+        & h2{
+        font-size: 10px;
+        }
+    }
+
+    .video-page{
+        height: 40vh;
+        & h2{
+            font-size: 14px;
+        }
+    }
+
+    .gear-cage{
+        height:48vh;
+    }
+
+    .left-cage{
+        & h4{
+            font-size: 26px;
+    }
+}
+    .right-cage{
+        background-size: cover;
+    }
+
+
+    .bgimage{
+        & h2{
+            font-size: 14px;
+        }
+    }
+
+    .contact{
+        height: 40vh;
+        padding: 0px 5px;
+
+        & h2{
+            font-size: 30px;
+            width: 85%;
+        }
+
+        & h5{
+            font-size: 22px;
+        }
+    }
+}

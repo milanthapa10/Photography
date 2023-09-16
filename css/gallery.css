@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+}
+/* gallery part starts here  */
+
+.gallery{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-gallery{
+    height: 55vh;
+    width: 100%; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/gallery\ b-g.jpg');
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter:blur(.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    word-spacing:5px;
+    letter-spacing: 2px;
+
+}
+
+.top-gallery h1{
+    color:white;
+    font-size: 50px;
+    margin-top: -5px;
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image1{
+    width: 400px;
+    height: 260px;
+    margin: 10px;
+    filter: grayscale(80%);
+    transition: .5s ease;
+    border-radius: 10px;
+}
+
+.image2{
+    width:320px;
+    height:260px;
+    margin: 10px;
+    filter: grayscale(80%);
+    transition: .5s ease;
+    border-radius: 10px;
+
+}
+
+.image1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.image2 img{
+    height: 100%;
+    width: 100%;
+}
+
+img:hover{ 
+    filter: grayscale(0%);
+    cursor: pointer;
+    transition: .5s ease;
+    scale: 1.06;
+}
+/* gallery part ends here  */
+
+
+/* ------------responsiveness ----------------- */
+
+@media screen and (max-width:480px){
+    .top-gallery{
+        height: 60dvh;
+        background-size: cover;
+
+        & h1{
+            font-size: 28px;
+        }
+    }
+
+    .container{
+        gap: 15px;
+        padding: 20px 10px;
+    }
+    .image1, .image2{
+        width: 320px;
+        filter: grayscale(0%);
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    .container{
+        gap:20px;
+        padding: 20px 10px;
+    }
+
+    .image1, .image2{
+        width: 300px;
+        filter: grayscale(0%);
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:769px) and (max-width:1028px){
+    .container{
+        gap:20px;
+        padding: 20px 10px;
+    }
+
+    .image1, .image2{
+        filter: grayscale(0%);
+    }
+}

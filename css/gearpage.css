@@ -1,0 +1,370 @@
+body{
+    background-color: black;
+}
+
+/* gear page starts here  */
+.gear-cage{
+    height: auto;
+    width: 100%;
+}
+
+
+/* header image  */
+.top-gear{
+    height: 90vh;
+    width: 100%; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../images/camera-equipment.jpg');
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter:blur(.8);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    word-spacing:5px;
+    letter-spacing:2px;
+    color:rgb(206, 206, 206);
+    gap:10px;
+    padding: 20px 0px;
+
+    & h2{
+        font-size:60px;
+        font-weight: bold;
+        color:white;
+    }
+    
+    & p{
+        width: 50%;
+        text-align: center;
+        word-spacing: 0px;
+    }
+}
+/* top gear page ends here  */
+
+
+/* bottom gear page starts here  */
+.bottom-gear{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap:40px;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+
+.row{
+    height: 350px;
+    width: 90%;
+    padding: 10px 20px;
+
+    & h4{
+        font-size: 16px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+}
+
+
+.eqp-images{
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    gap:30px;
+}
+
+.eqp{
+    height: 270px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.cam1{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('https://th.bing.com/th/id/OIP.yAKpaqbLDIhoseCUIbuoaQHaEK?pid=ImgDet&rs=1');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cam2{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('https://th.bing.com/th/id/OIP.cCXIjcDSkLbucmfJV5xfPAHaE8?pid=ImgDet&rs=1');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* lens part  */
+
+.lens1{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('https://www.ephotozine.com/articles/canon-ef-85mm-f-1-2l-ii-usm-lens-review-16624/images/highres-Canon-EF-85mm-f1-2L-II-USM-7_1492000895.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lens2{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('https://www.cameralabs.com/wp-content/uploads/2020/11/hero_NikonZ14-24f2-8S_15456-945x630@2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lens3{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('https://www.popphoto.com/uploads/2021/05/27/Nikon-best-camera-lens.jpg?auto=webp&width=800&crop=16:10,offset-x50');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* computer part  */
+
+.com1{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('https://www.lowyat.net/wp-content/uploads/2018/09/apple-macbook-pro-15-2018-review-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* bottom gear page ends here  */
+
+
+
+
+/* contact page starts here  */
+.contact {
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+
+    & h2{
+    font-size: 40px;
+    width: 45%;
+    text-align: center;
+    }
+
+    & h5{
+    font-size: 24px;
+    color: grey;
+    }
+}
+
+.contact button{
+    height:41px;
+    width:150px;
+    border-radius: 10px;
+    padding: 5px 10px; 
+    font-size: 16px;
+    font-family:'Poppins';
+    color:white;
+    background-color: orange;
+    border: 0;
+    font-weight: bold;
+
+}
+
+.contact a button:hover{
+    cursor: pointer;
+    color:orange;
+    background-color: white;
+    transition: 0.5s ease;
+    /* font-weight: bold; */
+}
+
+.contact a:hover{
+    cursor:default;
+}
+
+/* contact page ends here  */
+
+
+
+/* bgimage starts here  */
+
+.bgimage{
+    height: 90vh;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/originals/39/cb/27/39cb27e6ac87bfbcf89bcc1e4383f520.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    z-index: -1;
+    position: relative;
+    background-attachment: fixed;
+
+}
+
+.bgimage .caption h2{
+    font-family: 'Poppins';
+    color:white;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    position: absolute;
+    top:92%;
+    left:20px;
+}
+
+/* bgimage ends here  */
+
+
+/*  ------------responsiveness ----------------- */ 
+
+@media screen and (max-width:480px){
+    .top-gear{
+        align-items: center;
+        & h2{
+            font-size: 32px;
+            width: 100%;
+            text-align: center;
+        }
+
+        & p{
+            width: 80%;
+            font-size: 12px;
+        }
+    }
+
+    .row{
+        padding:10px;
+        height: auto;
+    }
+
+    .eqp-images{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5px;
+
+        & h4{
+            font-size: 12px;
+        }
+
+    }
+    .eqp{
+        height: 200px;
+        width: 300px;
+    }
+
+    .contact{
+        padding: 0px 5px;
+
+        & h2{
+            font-size: 22px;
+            width: 100%;
+            text-align: center;
+        }
+
+        & h5{
+            font-size: 18px;
+        }
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    .top-gear{
+        height: 80dvh;
+
+
+        & h2{
+            text-align: center;
+        }
+        & p{
+            width: 80%;
+        }
+    }
+
+    .row{
+        padding:10px;
+        height: auto;
+    }
+
+    .eqp-images{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5px;
+
+        & h4{
+            font-size: 12px;
+        }
+
+    }
+    .eqp{
+        height: 240px;
+        width: 340px;
+    }
+
+      .contact{
+        height: 40vh;
+        padding: 0px 5px;
+
+        & h2{
+            font-size: 30px;
+            width: 85%;
+        }
+
+        & h5{
+            font-size: 22px;
+        }
+    }
+
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:769px) and (max-width:1028px){
+
+   .top-gear{
+    & h2{
+        text-align: center;
+    }
+   } 
+
+   .row{
+    height: auto;
+   }
+   .eqp-images{
+    padding: 5px 0px;
+    flex-wrap: wrap;
+    gap:50px;
+   }
+
+   .eqp{
+    & h4{
+        text-align: center;
+    }
+   }
+
+
+   .contact{
+    height: 40vh;
+    padding: 0px 5px;
+
+    & h2{
+        font-size: 30px;
+        width: 85%;
+    }
+
+    & h5{
+        font-size: 22px;
+    }
+}
+}

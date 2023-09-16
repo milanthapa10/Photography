@@ -1,0 +1,301 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color:white;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* navigation part starts here  */
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 9;
+    position: sticky;
+    background-color: transparent;
+    height: auto;
+    top: 0;
+    background-color: transparent;
+    transition: all 0.5s;
+
+}
+
+.navigation-scrolled {
+    background:rgb(0, 0, 0, 0.8);
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    gap:40px;
+
+    & a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    }
+}
+
+.nav-items li a:hover {
+    color: orange;
+}
+
+.nav-items a,
+.nav-items a:link {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.nav-items a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, rgb(251, 128, 6), orange);
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size .3s ease-in;
+}
+
+.nav-items a:hover::before {
+    background-size: 100% 2px;
+
+}
+
+.right-nav i {
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.right-nav i:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+}
+
+.navigation span {
+    color: orange;
+    font-weight: bold;
+}
+
+.hambtn {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    height: auto;
+    width: auto;
+}
+
+.fa-xmark{
+    display: none;
+}
+
+
+/* navigation part ends here  */
+
+
+
+/* footer part starts here  */
+
+footer {
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap:20px;
+}
+
+.footer-data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: auto;
+}
+
+.colm {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    & h5{
+    margin: 5px 0px;
+    color: grey;
+
+    & i{
+    margin-right: 8px;
+    }
+    }
+}
+
+.colm a:hover h5{
+    color: white;
+}
+
+.socials i{
+    font-size: 24px;
+    margin: 2px 15px;
+    color: grey;
+}
+
+.socials a:hover i {
+    color: orange;
+
+}
+
+footer span {
+    color: grey;
+}
+
+/* footer part ends here  */
+
+
+/* -----------------------------------------responsive code ---------------------------------------------------- */
+
+@media screen and (max-width:480px)
+{
+    .navigation{
+        width: 100%;
+        padding:10px 8px;
+        justify-content: space-between;
+    }
+
+    .mid-nav{
+        display: none;
+    }    
+
+    .nav-socials{
+        display: none;
+    }
+
+    .hambtn {
+        display: flex;
+    }
+
+    footer{
+        height: auto;
+        padding: 10px;
+        gap:20px;
+
+        & p{
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .footer-data{
+        display: none;
+    }
+
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width:481px) and (max-width:768px)
+{
+    .navigation{
+        width: 100%;
+        padding:15px;
+        justify-content: space-between;
+    }   
+
+    .mid-nav{
+        display: none;
+    }    
+
+    .nav-socials{
+        display: none;
+    }
+
+    .hambtn {
+        display: flex;
+    }
+
+    footer{
+        height: auto;
+        padding: 10px;
+        gap:20px;
+
+        & p{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .footer-data{
+        display: none;
+    }
+
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width:769px) and (max-width:1028px)
+{
+    .navigation{
+        width: 100%;
+        padding:15px;
+        justify-content: space-around;
+    }   
+
+     
+
+    .nav-socials{
+        display: none;
+    }
+
+    .right-nav{
+        display: none;
+    }
+
+    footer{
+        height: auto;
+        padding: 10px;
+        gap:20px;
+
+        & p{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .footer-data{
+        display: none;
+    }
+
+}
