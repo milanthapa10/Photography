@@ -22,15 +22,18 @@ let crossicon = document.querySelector(".fa-xmark");
 let hamicon = document.querySelector(".fa-bars");
 
 hambtn.addEventListener("click",  ()=> {
-  if (midnav.style.display === "none") {
-    midnav.style.display = "flex";
-    navitem.style.flexDirection="column";
-    hamicon.style.display = "none";
+  if(crossicon.style.display === "none"){
     crossicon.style.display = "block";
-  } else {
-    midnav.style.display = "none";
+    hamicon.style.display = "none";
+    midnav.style.display="block";
+    navitem.style.flexDirection="column";
+    nav.style.alignItems="flex-start";
+    // navitem.style.paddingTop="10px";
+  } 
+  else {
     crossicon.style.display = "none";
     hamicon.style.display = "block";
+    midnav.style.display="none";
   }
 });
 

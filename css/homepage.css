@@ -7,7 +7,7 @@
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: change 40s step-end infinite;
+    animation: change 40s step-start infinite;
     position: absolute;
     top: 0;
     z-index: -1;

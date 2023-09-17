@@ -1,0 +1,30 @@
+.about{
+    height: 90vh;
+    width: 100%;
+    background-image: url('');
+    background-color: rgb(57, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-about{
+    background-image: url('../images/profile.jpg');
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 40%;
+}
+
+.right-about{
+    height: 90%;
+    width: 40%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    
+}
